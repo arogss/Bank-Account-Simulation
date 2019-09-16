@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="631.0" prefWidth="949.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="team_int_Elligence.Controllers.BankerController">
+   <children>
+      <SplitPane dividerPositions="0.6800422386483632" layoutX="505.0" layoutY="288.0" prefHeight="631.0" prefWidth="949.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                        <Label layoutX="138.0" layoutY="139.0" text="Customer_ID" />
+                        <Label layoutX="138.0" layoutY="182.0" text="Lastname" />
+                        <Label layoutX="137.0" layoutY="226.0" text="Firstname" />
+                        <Label layoutX="138.0" layoutY="274.0" text="Balance" />
+                        <Label layoutX="645.0" layoutY="119.0" text="Operation" />
+                        <TextField fx:id="txtcusID" layoutX="281.0" layoutY="127.0" />
+                        <TextField fx:id="txtLname" editable="false" layoutX="281.0" layoutY="176.0" />
+                        <TextField fx:id="txtFname" editable="false" layoutX="281.0" layoutY="220.0" />
+                        <TextField fx:id="txtBal" editable="false" layoutX="281.0" layoutY="268.0" />
+                        <TextField fx:id="txtOper" layoutX="668.0" layoutY="147.0" />
+                        <Button fx:id="btnDepo" layoutX="647.0" layoutY="207.0" mnemonicParsing="false" onAction="#deposit" text="Deposit" />
+                        <Button fx:id="btnWthdr" layoutX="754.0" layoutY="207.0" mnemonicParsing="false" onAction="#withdraw" text="Withdraw" />
+                        <Button fx:id="btnVDet" layoutX="130.0" layoutY="388.0" mnemonicParsing="false" onAction="#viewDetails" text="View Details" />
+                  <Label fx:id="greet" layoutX="14.0" layoutY="23.0" text="" />
+                  <Arc fill="#1b8d5a" layoutX="290.0" layoutY="71.0" length="270.0" radiusX="46.0" radiusY="22.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+                  <Label layoutX="323.0" layoutY="43.0" text="Bank of ITC5201">
+                     <font>
+                        <Font name="System Bold Italic" size="39.0" />
+                     </font>
+                     <textFill>
+                        <RadialGradient centerX="0.5" centerY="0.5" cycleMethod="REFLECT" radius="0.5">
+                           <stops>
+                              <Stop color="#0ee475" />
+                              <Stop color="#322e2f" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </textFill>
+                  </Label>
+                  <Label fx:id="greet" layoutX="14.0" layoutY="30.0">
+                     <font>
+                        <Font name="Algerian" size="24.0" />
+                     </font></Label>
+                     </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
